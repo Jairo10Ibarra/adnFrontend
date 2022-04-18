@@ -1,0 +1,21 @@
+<h1>Registrar Cliente</h1>
+
+<form [formGroup]="clienteForm" (ngSubmit)="crear()">
+  <div class="form-group">
+    <label for="nombreCliente">Nombre Cliente</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nombreCliente"
+      aria-describedby="Nombre del cliente"
+      formControlName="nombreCliente"
+      validar
+    />
+    
+  </div>
+  <div class="form-group">
+    <label for="tipoCliente">Tipo Cliente</label>
+    <input  formControlName="tipoCliente" type="text" class="form-control" id="tipoCliente" validar/>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

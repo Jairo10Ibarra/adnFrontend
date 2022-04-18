@@ -1,0 +1,21 @@
+<h1>Registrar Compra</h1>
+
+<form [formGroup]="compraForm" (ngSubmit)="crear()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Precio Compra</label>
+    <input
+      type="text"
+      class="form-control"
+      id="precio"
+      aria-describedby="precioCompra"
+      formControlName="precio"
+      validar
+    />
+    
+  </div>
+  <div class="form-group">
+    <label for="idCliente">IdCliente</label>
+    <input  formControlName="idCliente" type="text" class="form-control" id="idCliente" validar/>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
