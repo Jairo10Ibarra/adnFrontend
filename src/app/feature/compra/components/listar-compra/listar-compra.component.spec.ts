@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from "@angular/common/http";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { CompraService } from "@compra/shared/service/compra.service";
+import { HttpService } from "@core/services/http.service";
 
-import { ListarCompraComponent } from './listar-compra.component';
+import { ListarCompraComponent } from "./listar-compra.component";
 
-describe('ListarCompraComponent', () => {
+describe("ListarCompraComponent", () => {
   let component: ListarCompraComponent;
   let fixture: ComponentFixture<ListarCompraComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListarCompraComponent ]
-    })
-    .compileComponents();
+      declarations: [ListarCompraComponent],
+      imports: [HttpClientModule],
+      providers: [CompraService, HttpService],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +23,7 @@ describe('ListarCompraComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

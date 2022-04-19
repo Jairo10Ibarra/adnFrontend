@@ -1,25 +1,60 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule, DatePipe } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { RouterTestingModule } from "@angular/router/testing";
+import { CompraService } from "@compra/shared/service/compra.service";
+import { HttpService } from "@core/services/http.service";
+import { of } from "rxjs";
+import { CrearCompraComponent } from "./crear-compra.component";
 
-import { CrearCompraComponent } from './crear-compra.component';
-
-describe('CrearCompraComponent', () => {
+describe("CrearCompraComponent", () => {
   let component: CrearCompraComponent;
   let fixture: ComponentFixture<CrearCompraComponent>;
+  let compraService: CompraService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CrearCompraComponent ]
-    })
-    .compileComponents();
-  });
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [CrearCompraComponent],
+      imports: [
+        CommonModule,
+        HttpClientModule,
+        RouterTestingModule,
+        ReactiveFormsModule,
+        FormsModule,
+      ],
+      providers: [CompraService, HttpService, DatePipe],
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CrearCompraComponent);
     component = fixture.componentInstance;
+    compraService = TestBed.inject(CompraService);
+    spyOn(compraService, "guardar").and.returnValue(of(true));
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
+
+  it('formulario es invalido cuando esta vacio', () => {
+    expect(component.compraForm.valid).toBeFalsy();
+  });
+
+
+  it('Registrando cliente', () => {
+    expect(component.compraForm.valid).toBeFalsy();
+    component.compraForm.controls.precio.setValue('200000');
+    component.compraForm.controls.idCliente.setValue('1');
+    expect(component.compraForm.valid).toBeTruthy();
+
+    component.crear();
+
+    // Aca validamos el resultado esperado al enviar la petición
+    // TODO adicionar expect
+  });
+
+
 });

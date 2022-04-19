@@ -21,7 +21,6 @@ export class BorrarClienteComponent implements OnInit {
     this.clienteService.eliminar(idCliente).subscribe(response => {
       console.log(response);
     })
-    console.log(idCliente);
   }
 
 
