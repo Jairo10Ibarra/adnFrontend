@@ -1,39 +1,38 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 100.0.4896.127 (Windows 10)" package="" timestamp="2022-04-20T17:28:05" id="0" hostname="JAIRO-IBARRA" tests="22" errors="0" failures="0" time="0.71">
+<testsuite name="Chrome Headless 100.0.4896.127 (Windows 10)" package="" timestamp="2022-04-20T20:31:03" id="0" hostname="JAIRO-IBARRA" tests="21" errors="0" failures="0" time="0.72">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.127 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.069" classname="AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.011" classname="AppComponent"/>
-  <testcase name="ToolbarComponent should create" time="0.017" classname="ToolbarComponent"/>
-  <testcase name="BorrarClienteComponent should create" time="0.045" classname="BorrarClienteComponent"/>
-  <testcase name="BorrarClienteComponent should delete client" time="0.02" classname="BorrarClienteComponent"/>
-  <testcase name="NavbarComponent should create" time="0.026" classname="NavbarComponent"/>
-  <testcase name="CrearClienteComponent Registrando cliente" time="0.146" classname="CrearClienteComponent"/>
-  <testcase name="CrearClienteComponent formulario es invalido cuando esta vacio" time="0.055" classname="CrearClienteComponent"/>
-  <testcase name="CrearClienteComponent should create" time="0.036" classname="CrearClienteComponent"/>
-  <testcase name="SecurityGuard should ..." time="0.011" classname="SecurityGuard"/>
-  <testcase name="ClienteService should be created" time="0.004" classname="ClienteService"/>
-  <testcase name="ClienteComponent should create" time="0.017" classname="ClienteComponent"/>
-  <testcase name="ListarClienteComponent should create" time="0.042" classname="ListarClienteComponent"/>
-  <testcase name="CompraService should be created" time="0.007" classname="CompraService"/>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.036" classname="ErrorCamposPlantillaComponent"/>
-  <testcase name="ListarCompraComponent should create" time="0.017" classname="ListarCompraComponent"/>
-  <testcase name="HomeComponent should create" time="0.027" classname="HomeComponent"/>
-  <testcase name="CrearCompraComponent should create" time="0.028" classname="CrearCompraComponent"/>
-  <testcase name="CrearCompraComponent Registrando compra" time="0.023" classname="CrearCompraComponent"/>
-  <testcase name="CompraComponent should create" time="0.014" classname="CompraComponent"/>
-  <testcase name="BorrarCompraComponent should delete compra" time="0.051" classname="BorrarCompraComponent"/>
-  <testcase name="BorrarCompraComponent should create" time="0.008" classname="BorrarCompraComponent"/>
+  <testcase name="AppComponent should create the app" time="0.118" classname="AppComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.012" classname="AppComponent"/>
+  <testcase name="CompraComponent should create" time="0.043" classname="CompraComponent"/>
+  <testcase name="BorrarCompraComponent should delete compra" time="0.1" classname="BorrarCompraComponent"/>
+  <testcase name="BorrarCompraComponent should create" time="0.014" classname="BorrarCompraComponent"/>
+  <testcase name="NavbarComponent should create" time="0.048" classname="NavbarComponent"/>
+  <testcase name="BorrarClienteComponent should create" time="0.043" classname="BorrarClienteComponent"/>
+  <testcase name="BorrarClienteComponent should delete client" time="0.022" classname="BorrarClienteComponent"/>
+  <testcase name="ListarCompraComponent should create" time="0.046" classname="ListarCompraComponent"/>
+  <testcase name="CrearCompraComponent Registrando compra" time="0.091" classname="CrearCompraComponent"/>
+  <testcase name="CrearCompraComponent should create" time="0.016" classname="CrearCompraComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.027" classname="ToolbarComponent"/>
+  <testcase name="CompraService should be created" time="0.008" classname="CompraService"/>
+  <testcase name="ClienteComponent should create" time="0.013" classname="ClienteComponent"/>
+  <testcase name="SecurityGuard should ..." time="0.004" classname="SecurityGuard"/>
+  <testcase name="ClienteService should be created" time="0.002" classname="ClienteService"/>
+  <testcase name="CrearClienteComponent Registrando cliente" time="0.025" classname="CrearClienteComponent"/>
+  <testcase name="CrearClienteComponent formulario es invalido cuando esta vacio" time="0.014" classname="CrearClienteComponent"/>
+  <testcase name="CrearClienteComponent should create" time="0.017" classname="CrearClienteComponent"/>
+  <testcase name="ListarClienteComponent should create" time="0.018" classname="ListarClienteComponent"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.039" classname="ErrorCamposPlantillaComponent"/>
   <system-out>
     <![CDATA[Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-20 12:28:06'}
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: 1
 ,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
 ,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-20 12:28:06'}
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-20 15:31:03'}
 ,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-20 15:31:03'}
 ,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: 1
 
 ]]>
   </system-out>
