@@ -4,7 +4,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ClienteComponent } from './cliente.component';
 
 describe('ClienteComponent', () => {
-  //let component: ClienteComponent;
+  let component: ClienteComponent;
   let fixture: ComponentFixture<ClienteComponent>;
 
   beforeEach(async () => {
@@ -17,11 +17,11 @@ describe('ClienteComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ClienteComponent);
-    //component = fixture.componentInstance;
+    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
   it('should create', () => {
-    expect(true).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 });
