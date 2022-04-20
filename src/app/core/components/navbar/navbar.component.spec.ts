@@ -12,9 +12,9 @@ describe('NavbarComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ NavbarComponent ],
       imports: [RouterTestingModule.withRoutes([{
-        path: '/cliente' , component: ClienteComponent
+        path: 'cliente' , component: ClienteComponent
       }, 
-      { path: '/compra/listar' , component: ListarCompraComponent}
+      { path: 'compra/listar' , component: ListarCompraComponent}
     ])]
     })
     .compileComponents();

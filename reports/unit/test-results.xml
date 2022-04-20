@@ -1,75 +1,46 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 100.0.4896.127 (Windows 10)" package="" timestamp="2022-04-20T16:22:15" id="0" hostname="JAIRO-IBARRA" tests="33" errors="0" failures="1" time="0.648">
+<testsuite name="Chrome Headless 100.0.4896.127 (Windows 10)" package="" timestamp="2022-04-20T16:39:47" id="0" hostname="JAIRO-IBARRA" tests="23" errors="0" failures="0" time="0.605">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.127 Safari/537.36"/>
   </properties>
-  <testcase name="CrearClienteComponent Registrando cliente" time="0.087" classname="CrearClienteComponent"/>
+  <testcase name="BorrarCompraComponent should create" time="0.121" classname="BorrarCompraComponent"/>
+  <testcase name="BorrarCompraComponent should delete compra" time="0.024" classname="BorrarCompraComponent"/>
+  <testcase name="ClienteService should be created" time="0.006" classname="ClienteService"/>
+  <testcase name="ListarClienteComponent should create" time="0.036" classname="ListarClienteComponent"/>
+  <testcase name="CompraComponent should create" time="0.026" classname="CompraComponent"/>
+  <testcase name="CrearCompraComponent formulario es invalido cuando esta vacio" time="0.059" classname="CrearCompraComponent"/>
+  <testcase name="CrearCompraComponent Registrando cliente" time="0.03" classname="CrearCompraComponent"/>
+  <testcase name="CrearCompraComponent should create" time="0.017" classname="CrearCompraComponent"/>
+  <testcase name="ListarCompraComponent should create" time="0.045" classname="ListarCompraComponent"/>
+  <testcase name="CompraService should be created" time="0.013" classname="CompraService"/>
   <testcase name="CrearClienteComponent formulario es invalido cuando esta vacio" time="0.023" classname="CrearClienteComponent"/>
-  <testcase name="CrearClienteComponent should create" time="0.013" classname="CrearClienteComponent"/>
-  <testcase name="ListarClienteComponent should create" time="0.028" classname="ListarClienteComponent"/>
-  <testcase name="BorrarClienteComponent should create" time="0.019" classname="BorrarClienteComponent"/>
-  <testcase name="BorrarClienteComponent should delete client" time="0.019" classname="BorrarClienteComponent"/>
-  <testcase name="ClienteComponent should create" time="0.02" classname="ClienteComponent"/>
-  <testcase name="AppComponent should create the app" time="0.011" classname="AppComponent"/>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.01" classname="AppComponent"/>
-  <testcase name="ToolbarComponent should create" time="0.015" classname="ToolbarComponent"/>
-  <testcase name="BorrarCompraComponent should create" time="0.013" classname="BorrarCompraComponent"/>
-  <testcase name="BorrarCompraComponent should delete compra" time="0.029" classname="BorrarCompraComponent"/>
-  <testcase name="NavbarComponent should create" time="0.164" classname="NavbarComponent">
-    <failure type="">Error: Invalid configuration of route '/cliente': path cannot start with a slash
-    at validateNode (node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2346:1)
-    at validateConfig (node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2295:1)
-    at Router.resetConfig (node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:4323:1)
-    at new Router (node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:3907:1)
-    at Object.setupTestingRouter [as useFactory] (node_modules/@angular/router/__ivy_ngcc__/fesm2015/testing.js:101:1)
-    at Object.factory (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11535:1)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11452:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11272:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at Module.ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/core/components/navbar/navbar.component.spec.ts:30:23)
-    at _ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:303:1)
-</failure>
-  </testcase>
-  <testcase name="SecurityGuard should ..." time="0.002" classname="SecurityGuard"/>
-  <testcase name="HomeComponent should create" time="0.008" classname="HomeComponent"/>
-  <testcase name="BorrarProductoComponent should create" time="0.006" classname="BorrarProductoComponent"/>
-  <testcase name="CompraComponent should create" time="0.008" classname="CompraComponent"/>
-  <testcase name="ListarCompraComponent should create" time="0.027" classname="ListarCompraComponent"/>
-  <testcase name="CrearCompraComponent Registrando cliente" time="0.019" classname="CrearCompraComponent"/>
-  <testcase name="CrearCompraComponent formulario es invalido cuando esta vacio" time="0.013" classname="CrearCompraComponent"/>
-  <testcase name="CrearCompraComponent should create" time="0.008" classname="CrearCompraComponent"/>
-  <testcase name="CompraService should be created" time="0.003" classname="CompraService"/>
-  <testcase name="ListarProductoComponent should create" time="0.014" classname="ListarProductoComponent"/>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.021" classname="ErrorCamposPlantillaComponent"/>
-  <testcase name="ClienteService should be created" time="0.005" classname="ClienteService"/>
-  <testcase name="ProductoComponent should create" time="0.015" classname="ProductoComponent"/>
-  <testcase name="ProductoService deberia eliminar un producto" time="0.004" classname="ProductoService"/>
-  <testcase name="ProductoService deberia crear un producto" time="0.003" classname="ProductoService"/>
-  <testcase name="ProductoService deberia listar productos" time="0.002" classname="ProductoService"/>
-  <testcase name="ProductoService should be created" time="0.002" classname="ProductoService"/>
-  <testcase name="CrearProductoComponent Registrando producto" time="0.018" classname="CrearProductoComponent"/>
-  <testcase name="CrearProductoComponent formulario es invalido cuando esta vacio" time="0.009" classname="CrearProductoComponent"/>
-  <testcase name="CrearProductoComponent should create" time="0.01" classname="CrearProductoComponent"/>
+  <testcase name="CrearClienteComponent should create" time="0.017" classname="CrearClienteComponent"/>
+  <testcase name="CrearClienteComponent Registrando cliente" time="0.018" classname="CrearClienteComponent"/>
+  <testcase name="BorrarClienteComponent should delete client" time="0.026" classname="BorrarClienteComponent"/>
+  <testcase name="BorrarClienteComponent should create" time="0.018" classname="BorrarClienteComponent"/>
+  <testcase name="HomeComponent should create" time="0.019" classname="HomeComponent"/>
+  <testcase name="SecurityGuard should ..." time="0.003" classname="SecurityGuard"/>
+  <testcase name="ToolbarComponent should create" time="0.008" classname="ToolbarComponent"/>
+  <testcase name="NavbarComponent should create" time="0.024" classname="NavbarComponent"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.019" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="AppComponent should create the app" time="0.02" classname="AppComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.009" classname="AppComponent"/>
+  <testcase name="ClienteComponent should create" time="0.024" classname="ClienteComponent"/>
   <system-out>
-    <![CDATA[Chrome 100.0.4896.127 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-20 11:22:15'}
-,Chrome 100.0.4896.127 (Windows 10) LOG: true
-,Chrome 100.0.4896.127 (Windows 10) LOG: true
-,Chrome 100.0.4896.127 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
+    <![CDATA[Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: 1
+,Chrome Headless 100.0.4896.127 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
 1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
 2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 100.0.4896.127 (Windows 10) LOG: true
-,Chrome 100.0.4896.127 (Windows 10) LOG: 1
-,Chrome 100.0.4896.127 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-20 11:39:47'}
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-20 11:39:47'}
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+,Chrome Headless 100.0.4896.127 (Windows 10) ERROR: 'NG0304: 'router-outlet' is not a known element:
 1. If 'router-outlet' is an Angular component, then verify that it is part of this module.
 2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 100.0.4896.127 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
-,Chrome 100.0.4896.127 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-20 11:22:15'}
-,Chrome 100.0.4896.127 (Windows 10) LOG: true
 
 ]]>
   </system-out>
