@@ -41,11 +41,6 @@ describe("CrearCompraComponent", () => {
     expect(component).toBeTruthy();
   });
 
-  it('formulario es invalido cuando esta vacio', () => {
-    expect(component.compraForm.valid).toBeFalsy();
-  });
-
-
   it('Registrando compra', () => {
     expect(component.compraForm.valid).toBeFalsy();
     component.compraForm.controls.precio.setValue('200000');
