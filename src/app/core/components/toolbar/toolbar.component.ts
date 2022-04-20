@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -27,8 +27,11 @@ import { Component } from '@angular/core';
     width: 24px;
   }`]
 })
-export class ToolbarComponent {
+export class ToolbarComponent implements OnInit {
 
+  constructor() { }
 
+  ngOnInit() {
+  }
 
 }

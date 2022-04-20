@@ -1,6 +1,5 @@
 import { CommonModule, DatePipe } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterTestingModule } from "@angular/router/testing";
@@ -25,7 +24,6 @@ describe("CrearCompraComponent", () => {
         FormsModule,
       ],
       providers: [CompraService, HttpService, DatePipe],
-      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
@@ -41,7 +39,12 @@ describe("CrearCompraComponent", () => {
     expect(component).toBeTruthy();
   });
 
-  it('Registrando compra', () => {
+  it('formulario es invalido cuando esta vacio', () => {
+    expect(component.compraForm.valid).toBeFalsy();
+  });
+
+
+  it('Registrando cliente', () => {
     expect(component.compraForm.valid).toBeFalsy();
     component.compraForm.controls.precio.setValue('200000');
     component.compraForm.controls.idCliente.setValue('1');
