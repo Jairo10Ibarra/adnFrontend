@@ -4,6 +4,7 @@ import { CompraService } from "@compra/shared/service/compra.service";
 import { HttpService } from "@core/services/http.service";
 import { BorrarCompraComponent } from "./borrar-compra.component";
 import { of } from "rxjs";
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
 
 
 describe("BorrarCompraComponent", () => {
@@ -16,6 +17,7 @@ describe("BorrarCompraComponent", () => {
       declarations: [BorrarCompraComponent],
       imports:[HttpClientModule],
       providers: [CompraService, HttpService],
+      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   });
 
