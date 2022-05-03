@@ -1,12 +1,12 @@
-import { HttpClientModule } from "@angular/common/http";
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { ClienteService } from "@cliente/shared/service/cliente.service";
-import { HttpService } from "@core/services/http.service";
-import { of } from "rxjs";
-import { BorrarClienteComponent } from "./borrar-cliente.component";
+import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ClienteService } from '@cliente/shared/service/cliente.service';
+import { HttpService } from '@core/services/http.service';
+import { of } from 'rxjs';
+import { BorrarClienteComponent } from './borrar-cliente.component';
 
-describe("BorrarClienteComponent", () => {
+describe('BorrarClienteComponent', () => {
   let component: BorrarClienteComponent;
   let fixture: ComponentFixture<BorrarClienteComponent>;
   let clienteService: ClienteService;
@@ -27,11 +27,11 @@ describe("BorrarClienteComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it("should delete client", () => {
+  it('should delete client', () => {
     spyOn(clienteService, 'eliminar').and.returnValue(of(true));
     component.borrarCliente(1);
     expect(clienteService.eliminar).toHaveBeenCalledWith(1);

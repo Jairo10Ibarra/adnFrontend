@@ -1,38 +1,107 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 100.0.4896.127 (Windows 10)" package="" timestamp="2022-04-20T20:46:12" id="0" hostname="JAIRO-IBARRA" tests="21" errors="0" failures="0" time="0.728">
+<testsuite name="Chrome Headless 101.0.4951.41 (Windows 10)" package="" timestamp="2022-04-28T04:45:21" id="0" hostname="JAIRO-IBARRA" tests="23" errors="0" failures="3" time="0.286">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.127 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/101.0.4951.41 Safari/537.36"/>
   </properties>
-  <testcase name="BorrarCompraComponent should create" time="0.143" classname="BorrarCompraComponent"/>
-  <testcase name="BorrarCompraComponent should delete compra" time="0.025" classname="BorrarCompraComponent"/>
-  <testcase name="CompraComponent should create" time="0.028" classname="CompraComponent"/>
-  <testcase name="CompraService should be created" time="0.005" classname="CompraService"/>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.032" classname="ErrorCamposPlantillaComponent"/>
-  <testcase name="ClienteComponent should create" time="0.019" classname="ClienteComponent"/>
-  <testcase name="CrearCompraComponent Registrando compra" time="0.08" classname="CrearCompraComponent"/>
-  <testcase name="CrearCompraComponent should create" time="0.043" classname="CrearCompraComponent"/>
-  <testcase name="BorrarClienteComponent should delete client" time="0.023" classname="BorrarClienteComponent"/>
-  <testcase name="BorrarClienteComponent should create" time="0.025" classname="BorrarClienteComponent"/>
-  <testcase name="ListarCompraComponent should create" time="0.024" classname="ListarCompraComponent"/>
-  <testcase name="ListarClienteComponent should create" time="0.054" classname="ListarClienteComponent"/>
-  <testcase name="CrearClienteComponent formulario es invalido cuando esta vacio" time="0.072" classname="CrearClienteComponent"/>
-  <testcase name="CrearClienteComponent should create" time="0.025" classname="CrearClienteComponent"/>
-  <testcase name="CrearClienteComponent Registrando cliente" time="0.031" classname="CrearClienteComponent"/>
-  <testcase name="NavbarComponent should create" time="0.029" classname="NavbarComponent"/>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.035" classname="AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.009" classname="AppComponent"/>
-  <testcase name="SecurityGuard should ..." time="0.008" classname="SecurityGuard"/>
-  <testcase name="ToolbarComponent should create" time="0.015" classname="ToolbarComponent"/>
-  <testcase name="ClienteService should be created" time="0.003" classname="ClienteService"/>
+  <testcase name="CompraComponent should create" time="0.03" classname="CompraComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.01" classname="ToolbarComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.011" classname="AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.006" classname="AppComponent"/>
+  <testcase name="CrearCompraComponent Registrando compra" time="0.046" classname="CrearCompraComponent"/>
+  <testcase name="CrearCompraComponent should create" time="0.023" classname="CrearCompraComponent"/>
+  <testcase name="BorrarClienteComponent should create" time="0.02" classname="BorrarClienteComponent"/>
+  <testcase name="BorrarClienteComponent should delete client" time="0.004" classname="BorrarClienteComponent"/>
+  <testcase name="ListarCompraComponent should create" time="0.025" classname="ListarCompraComponent"/>
+  <testcase name="ListarCompraComponent should delete compra" time="0.009" classname="ListarCompraComponent"/>
+  <testcase name="CompraService should be created" time="0.003" classname="CompraService"/>
+  <testcase name="NavbarComponent should create" time="0.008" classname="NavbarComponent"/>
+  <testcase name="BorrarCompraComponent should create" time="0.01" classname="BorrarCompraComponent"/>
+  <testcase name="BorrarCompraComponent should delete compra" time="0.007" classname="BorrarCompraComponent"/>
+  <testcase name="ClienteComponent should create" time="0.004" classname="ClienteComponent"/>
+  <testcase name="CrearClienteComponent Registrando cliente" time="0.015" classname="CrearClienteComponent">
+    <failure type="">Error: No value accessor for form control with name: 'tipoCliente'
+    at _throwError (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1732:1)
+    at setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1506:1)
+    at FormGroupDirective.addControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5253:1)
+    at FormControlName._setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5835:1)
+    at FormControlName.ngOnChanges (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5780:1)
+    at FormControlName.rememberChangeHistoryAndInvokeOnChangesHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1520:1)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2583:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at selectIndexInternal (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:8463:1)
+</failure>
+  </testcase>
+  <testcase name="CrearClienteComponent formulario es invalido cuando esta vacio" time="0.009" classname="CrearClienteComponent">
+    <failure type="">Error: No value accessor for form control with name: 'tipoCliente'
+    at _throwError (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1732:1)
+    at setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1506:1)
+    at FormGroupDirective.addControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5253:1)
+    at FormControlName._setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5835:1)
+    at FormControlName.ngOnChanges (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5780:1)
+    at FormControlName.rememberChangeHistoryAndInvokeOnChangesHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1520:1)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2583:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at selectIndexInternal (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:8463:1)
+</failure>
+  </testcase>
+  <testcase name="CrearClienteComponent should create" time="0.011" classname="CrearClienteComponent">
+    <failure type="">Error: No value accessor for form control with name: 'tipoCliente'
+    at _throwError (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1732:1)
+    at setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:1506:1)
+    at FormGroupDirective.addControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5253:1)
+    at FormControlName._setUpControl (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5835:1)
+    at FormControlName.ngOnChanges (node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js:5780:1)
+    at FormControlName.rememberChangeHistoryAndInvokeOnChangesHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:1520:1)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2583:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at selectIndexInternal (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:8463:1)
+</failure>
+  </testcase>
+  <testcase name="SecurityGuard should ..." time="0.005" classname="SecurityGuard"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.008" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="ListarClienteComponent should delete compra" time="0.014" classname="ListarClienteComponent"/>
+  <testcase name="ListarClienteComponent should create" time="0.007" classname="ListarClienteComponent"/>
+  <testcase name="ClienteService should be created" time="0.001" classname="ClienteService"/>
   <system-out>
-    <![CDATA[Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: 1
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-20 15:46:12'}
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-20 15:46:13'}
-,Chrome Headless 100.0.4896.127 (Windows 10) LOG: true
+    <![CDATA[Chrome Headless 101.0.4951.41 (Windows 10) ERROR: 'NG0304: 'mat-toolbar' is not a known element:
+1. If 'mat-toolbar' is an Angular component, then verify that it is part of this module.
+2. If 'mat-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: Object{precio: '200000', idCliente: '1', fechaCompra: '2022-04-27'}
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
+,Chrome Headless 101.0.4951.41 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'compra/listar'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'compra/listar'
+Error: Cannot match any routes. URL Segment: 'compra/listar'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1), 'Error: Cannot match any routes. URL Segment: 'compra/listar'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: Observable{_isScalar: false, source: Observable{_isScalar: false, source: Observable{_isScalar: ..., source: ..., operator: ...}, operator: FilterOperator{predicate: ..., thisArg: ...}}, operator: MapOperator{project: (res) => res.body, thisArg: undefined}}
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: 1
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: Object{nombreCliente: 'Jairo', tipoCliente: '11', fechaCreacion: '2022-04-27 23:45:21'}
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
+,Chrome Headless 101.0.4951.41 (Windows 10) LOG: true
 
 ]]>
   </system-out>

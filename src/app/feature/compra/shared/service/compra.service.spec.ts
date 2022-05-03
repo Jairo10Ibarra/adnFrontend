@@ -11,7 +11,7 @@ describe('CompraService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
-        providers:[CompraService, HttpService],
+        providers: [CompraService, HttpService],
         schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
 
     });

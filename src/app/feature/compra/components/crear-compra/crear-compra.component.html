@@ -1,21 +1,38 @@
 <h1>Registrar Compra</h1>
 
-<form [formGroup]="compraForm" (ngSubmit)="crear()">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Precio Compra</label>
+<form [formGroup]="compraForm" class="example-form" (ngSubmit)="alertCompraAgregada()">
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Precio Compra</mat-label>
     <input
-      type="text"
-      class="form-control"
+      matInput
+      type="number"
+      placeholder="1000"
       id="precio"
-      aria-describedby="precioCompra"
+      name="precio"
       formControlName="precio"
+      aria-describedby="precioCompra"
       validar
     />
-    
-  </div>
-  <div class="form-group">
-    <label for="idCliente">IdCliente</label>
-    <input  formControlName="idCliente" type="text" class="form-control" id="idCliente" validar/>
-  </div>
-  <button type="submit" class="btn btn-primary">Guardar</button>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="example-full-width">
+    <mat-label>Id Cliente</mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="1000"
+      id="idCliente"
+      name="idCliente"
+      formControlName="idCliente"
+      aria-describedby="idCliente"
+      validar
+    />
+  </mat-form-field>
+  <button id="btn_save_buy"
+    mat-raised-button
+    color="primary"
+    type="submit"
+  >
+    Guardar
+  </button>
 </form>

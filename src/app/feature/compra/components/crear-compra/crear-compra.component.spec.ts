@@ -1,15 +1,15 @@
-import { CommonModule, DatePipe } from "@angular/common";
-import { HttpClientModule } from "@angular/common/http";
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
-import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { RouterTestingModule } from "@angular/router/testing";
-import { CompraService } from "@compra/shared/service/compra.service";
-import { HttpService } from "@core/services/http.service";
-import { of } from "rxjs";
-import { CrearCompraComponent } from "./crear-compra.component";
+import { CommonModule, DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { CompraService } from '@compra/shared/service/compra.service';
+import { HttpService } from '@core/services/http.service';
+import { of } from 'rxjs';
+import { CrearCompraComponent } from './crear-compra.component';
 
-describe("CrearCompraComponent", () => {
+describe('CrearCompraComponent', () => {
   let component: CrearCompraComponent;
   let fixture: ComponentFixture<CrearCompraComponent>;
   let compraService: CompraService;
@@ -33,11 +33,11 @@ describe("CrearCompraComponent", () => {
     fixture = TestBed.createComponent(CrearCompraComponent);
     component = fixture.componentInstance;
     compraService = TestBed.inject(CompraService);
-    spyOn(compraService, "guardar").and.returnValue(of(true));
+    spyOn(compraService, 'guardar').and.returnValue(of(true));
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 

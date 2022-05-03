@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
-import { ListarCompraComponent } from './components/listar-compra/listar-compra.component';
+import { CompraRoutingModule } from './compra-routing.module';
 import { BorrarCompraComponent } from './components/borrar-compra/borrar-compra.component';
 import { CrearCompraComponent } from './components/crear-compra/crear-compra.component';
 import { CompraComponent } from './components/compra/compra.component';
-import { CompraRoutingModule } from './compra-routing.module';
+import { ListarCompraComponent } from './components/listar-compra/listar-compra.component';
 import { CompraService } from './shared/service/compra.service';
 import { SharedModule } from '@shared/shared.module';
-
-
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,13 @@ import { SharedModule } from '@shared/shared.module';
   imports: [
     CommonModule,
     CompraRoutingModule,
-    SharedModule
-  
+    SharedModule,
+    MatTableModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule
   ],
-  providers:[
+  providers: [
     CompraService,
     DatePipe
   ]

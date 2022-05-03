@@ -10,9 +10,9 @@ export class Compra {
     idCliente: number,
     fechaCompra: Date
   ) {
-        this.idCompra=idCompra;
-        this.precio=precio;
-        this.idCliente=idCliente;
-        this.fechaCompra=fechaCompra;
+        this.idCompra = idCompra;
+        this.precio = precio;
+        this.idCliente = idCliente;
+        this.fechaCompra = fechaCompra;
   }
 }

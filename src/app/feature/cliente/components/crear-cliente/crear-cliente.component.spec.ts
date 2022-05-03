@@ -1,15 +1,15 @@
-import { CommonModule, DatePipe } from "@angular/common";
-import { HttpClientModule } from "@angular/common/http";
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from "@angular/core";
-import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { RouterTestingModule } from "@angular/router/testing";
-import { ClienteService } from "@cliente/shared/service/cliente.service";
-import { HttpService } from "@core/services/http.service";
-import { of } from "rxjs";
-import { CrearClienteComponent } from "./crear-cliente.component";
+import { CommonModule, DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ClienteService } from '@cliente/shared/service/cliente.service';
+import { HttpService } from '@core/services/http.service';
+import { of } from 'rxjs';
+import { CrearClienteComponent } from './crear-cliente.component';
 
-describe("CrearClienteComponent", () => {
+describe('CrearClienteComponent', () => {
   let component: CrearClienteComponent;
   let fixture: ComponentFixture<CrearClienteComponent>;
   let clienteService: ClienteService;
@@ -38,7 +38,7 @@ describe("CrearClienteComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 
@@ -46,7 +46,7 @@ describe("CrearClienteComponent", () => {
     expect(component.clienteForm.valid).toBeFalsy();
   });
 
-  
+
   it('Registrando cliente', () => {
     expect(component.clienteForm.valid).toBeFalsy();
     component.clienteForm.controls.nombreCliente.setValue('Jairo');

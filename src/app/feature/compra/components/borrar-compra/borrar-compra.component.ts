@@ -1,13 +1,12 @@
-import { Component, OnInit } from "@angular/core";
-import { Compra } from "@compra/shared/model/compra";
-import { CompraService } from "@compra/shared/service/compra.service";
-import { Observable } from "rxjs";
-
+import { Component, OnInit } from '@angular/core';
+import { Compra } from '@compra/shared/model/compra';
+import { CompraService } from '@compra/shared/service/compra.service';
+import { Observable } from 'rxjs';
 
 @Component({
-  selector: "app-borrar-compra",
-  templateUrl: "./borrar-compra.component.html",
-  styleUrls: ["./borrar-compra.component.css"],
+  selector: 'app-borrar-compra',
+  templateUrl: './borrar-compra.component.html',
+  styleUrls: ['./borrar-compra.component.css'],
 })
 export class BorrarCompraComponent implements OnInit {
   public listaCompras: Observable<Compra[]>;
@@ -15,7 +14,8 @@ export class BorrarCompraComponent implements OnInit {
   constructor(protected compraService: CompraService) {}
 
   ngOnInit(): void {
-    this.listarCompras();
+    this.listaCompras =  this.compraService.consultar();
+    console.log(this.listaCompras);
   }
 
   public borrarCompra(idCompra: number) {
@@ -29,4 +29,5 @@ export class BorrarCompraComponent implements OnInit {
   public listarCompras() {
     this.listaCompras = this.compraService.consultar();
   }
+
 }

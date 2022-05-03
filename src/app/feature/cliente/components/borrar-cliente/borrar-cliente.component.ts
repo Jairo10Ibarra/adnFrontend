@@ -19,9 +19,16 @@ export class BorrarClienteComponent implements OnInit {
 
   public borrarCliente(idCliente: number){
     this.clienteService.eliminar(idCliente).subscribe(response => {
+      this.listarClientes();
       console.log(response);
-    })
+    });
+    console.log(idCliente);
   }
+
+  public listarClientes() {
+    this.listaClientes = this.clienteService.consultar();
+  }
+
 
 
 

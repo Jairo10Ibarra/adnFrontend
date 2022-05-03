@@ -1,0 +1,12 @@
+.boton-crear-compra {
+  justify-items: center;
+  color: aqua;
+}
+
+.w-full {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

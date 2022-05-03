@@ -11,7 +11,7 @@ export class ClienteService {
   public consultar() {
     return this.http.doGet<Cliente[]>(
       `${environment.endpoint}/cliente`,
-      this.http.optsName("consultar clientes")
+      this.http.optsName('consultar clientes')
     );
   }
 
@@ -19,14 +19,14 @@ export class ClienteService {
     return this.http.doPost<Cliente, any>(
       `${environment.endpoint}/cliente`,
       cliente,
-      this.http.optsName("crear cliente")
+      this.http.optsName('crear cliente')
     );
   }
 
   public eliminar(idCliente: number) {
     return this.http.doDelete<boolean>(
       `${environment.endpoint}/cliente/${idCliente}`,
-      this.http.optsName("eliminar cliente")
+      this.http.optsName('eliminar cliente')
     );
   }
 

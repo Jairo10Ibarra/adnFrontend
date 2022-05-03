@@ -7,6 +7,11 @@ import { ClienteComponent } from './components/cliente/cliente.component';
 import { ListarClienteComponent } from './components/listar-cliente/listar-cliente.component';
 import { ClienteService } from './shared/service/cliente.service';
 import { SharedModule } from '@shared/shared.module';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table'  
 
 
 @NgModule({
@@ -19,9 +24,14 @@ import { SharedModule } from '@shared/shared.module';
   imports: [
     CommonModule,
     ClienteRoutingModule,
-    SharedModule
+    SharedModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule,
+    MatTableModule
   ],
-    providers:[
+    providers: [
      ClienteService,
       DatePipe
     ]
